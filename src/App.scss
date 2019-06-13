@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    .row {
+        display: flex;
+
+        &.justify-between {
+            justify-content: space-between;
+        }
+        &.align-center {
+            align-items: center;
+        }
+
+        .column {
+            padding-left: calc(#{$gutter});
+            padding-right: calc(#{$gutter});
+            &.half {
+                flex-basis: calc(50% - #{$gutter});
+            }
+            &.quarter {
+                flex-basis: calc(25% - #{$gutter});
+            }
+            &.full {
+                flex-basis: calc(100% - #{$gutter});
+            }
+        }
+    }
+}
