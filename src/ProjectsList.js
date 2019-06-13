@@ -4,13 +4,13 @@ import Project from './Project';
 
 const ProjectsList = () => {
     return (
-        <div className="projects-list">
+        <section className="projects-list">
             {
                 projects.map(project => (
-                    <Project project={project}></Project>
+                    <Project project={project}/>
                 ))
             }
-        </div>
+        </section>
     )
 }
 
