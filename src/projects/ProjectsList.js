@@ -7,7 +7,7 @@ const ProjectsList = () => {
         <section className="projects-list">
             {
                 projects.map(project => (
-                    <Project project={project}/>
+                    <Project project={project} key={project.id} />
                 ))
             }
         </section>
