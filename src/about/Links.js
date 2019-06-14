@@ -26,7 +26,7 @@ const linkList = [
 
 const Links = () => {
     return (
-        <div className="links">
+        <div className="links content-column">
             <h3>Other places I exist:</h3>
             <ul>
                 {

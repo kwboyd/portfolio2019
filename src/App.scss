@@ -30,6 +30,11 @@ body {
     p {
         margin: 1rem 0;
     }
+
+    h3 {
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
 }
 
 .row {
@@ -61,5 +66,25 @@ body {
     }
     &.two-thirds {
         flex-basis: calc(66% - #{$gutter});
+    }
+}
+
+.container {
+    padding: 2rem 3.5rem;
+}
+
+.content-column {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        padding: 1rem 3.5rem;
+    }
+
+    .column.full-width-sm {
+        flex-basis: calc(100% - #{$gutter});
     }
 }

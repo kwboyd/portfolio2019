@@ -5,11 +5,11 @@ import './About.scss';
 
 const About = () => {
     return (
-        <section className="row about">
-            <div className="column half">
+        <section className="about row container">
+            <div className="column half full-width-sm">
                 <AboutText/>
             </div>
-            <div className="column half">
+            <div className="column half full-width-sm">
                 <Links/>
             </div>
         </section>

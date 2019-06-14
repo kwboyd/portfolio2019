@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './header/Header';
-// import ProjectsList from './projects/ProjectsList';
+import ProjectsList from './projects/ProjectsList';
 import About from './about/About';
 import './App.scss';
 
@@ -10,6 +10,7 @@ const App = () => {
         <div>
             <Header/>
             <About/>
+            <ProjectsList/>
         </div>
     )
 }
