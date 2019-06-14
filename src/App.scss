@@ -70,13 +70,7 @@ body {
 }
 
 .container {
-    padding: 2rem 3.5rem;
-}
-
-.content-column {
-    max-width: 470px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2rem 6rem;
 }
 
 @media screen and (max-width: 980px) {
@@ -86,5 +80,11 @@ body {
 
     .column.full-width-sm {
         flex-basis: calc(100% - #{$gutter});
+    }
+
+    .content-column {
+        max-width: 470px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

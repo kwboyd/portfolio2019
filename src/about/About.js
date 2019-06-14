@@ -5,7 +5,7 @@ import './About.scss';
 
 const About = () => {
     return (
-        <section className="about row container">
+        <section className="about row container justify-between">
             <div className="column half full-width-sm">
                 <AboutText/>
             </div>
