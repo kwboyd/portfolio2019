@@ -1,4 +1,7 @@
 ### Kate Boyd Portfolio
-Run dev with `npm run start`
-Run tests with `npm run test`
-Build with `parcel build src/index.html` (parcel bundler CLI needed)
+1. Run dev with `npm run start`
+2. Run tests with `npm run test`
+
+## Build
+1. You will need the parcel-bundler CLI: `npm install -g parcel-bundler`
+2. Build with `parcel build src/index.html` 
