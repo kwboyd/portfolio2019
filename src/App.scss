@@ -20,37 +20,6 @@ body {
     margin: 0px;
     font-family: 'Josefin Sans', sans-serif;
 
-    .row {
-        display: flex;
-
-        &.justify-between {
-            justify-content: space-between;
-        }
-        &.align-center {
-            align-items: center;
-        }
-
-        .column {
-            padding-left: calc(#{$gutter});
-            padding-right: calc(#{$gutter});
-            &.half {
-                flex-basis: calc(50% - #{$gutter});
-            }
-            &.quarter {
-                flex-basis: calc(25% - #{$gutter});
-            }
-            &.full {
-                flex-basis: calc(100% - #{$gutter});
-            }
-            &.third {
-                flex-basis: calc(33% - #{$gutter});
-            }
-            &.two-thirds {
-                flex-basis: calc(66% - #{$gutter});
-            }
-        }
-    }
-
     p, li {
         font-weight: 300;
         color: $black;
@@ -60,5 +29,37 @@ body {
 
     p {
         margin: 1rem 0;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.align-center {
+        align-items: center;
+    }
+}
+
+.column {
+    padding-left: calc(#{$gutter});
+    padding-right: calc(#{$gutter});
+    &.half {
+        flex-basis: calc(50% - #{$gutter});
+    }
+    &.quarter {
+        flex-basis: calc(25% - #{$gutter});
+    }
+    &.full {
+        flex-basis: calc(100% - #{$gutter});
+    }
+    &.third {
+        flex-basis: calc(33% - #{$gutter});
+    }
+    &.two-thirds {
+        flex-basis: calc(66% - #{$gutter});
     }
 }

@@ -6,10 +6,10 @@ import './About.scss';
 const About = () => {
     return (
         <section className="row about">
-            <div className="column two-thirds">
+            <div className="column half">
                 <AboutText/>
             </div>
-            <div className="column third">
+            <div className="column half">
                 <Links/>
             </div>
         </section>

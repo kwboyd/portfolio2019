@@ -9,4 +9,13 @@
         font-weight: 300;
         font-size: 1.5rem;
     }
+
+    @media screen and (max-width: 980px) {
+        a {
+            color: blue;
+        }
+        .column.half {
+            flex-basis: 100%;
+        }
+    }
 }
