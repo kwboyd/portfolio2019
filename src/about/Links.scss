@@ -1,7 +1,5 @@
 @import '../variables.scss';
 
-$color-collection: ($magenta, $purple, $blue, $teal, $green);
-
 .links {
     margin-left: auto;
     
@@ -11,35 +9,5 @@ $color-collection: ($magenta, $purple, $blue, $teal, $green);
         &:visited {
             color: $black;
         }
-    }
-    
-    @for $i from 0 to length($color-collection) {
-        .link-#{$i} {
-            &::before {
-                color: nth($color-collection, $i+1);
-            }
-            a {
-                &:focus, &:hover, &:visited:hover, &:visited:focus {
-                    filter: brightness(40%);
-                    color: nth($color-collection, $i+1);
-                }
-            }
-        }
-    }
-
-    li {
-        list-style: none;
-    }
-
-    ul li::before {
-        content: "\2022"; 
-        float: left;
-        margin-top: 3px;
-        width: 1rem;
-        margin-left: -1rem;
-    }
-
-    ul {
-        padding-left: 1.3rem;
     }
 }

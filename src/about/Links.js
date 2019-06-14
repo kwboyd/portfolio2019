@@ -31,7 +31,7 @@ const Links = () => {
             <ul>
                 {
                     linkList.map((link, index) => (
-                        <li key={link.url} className={`link-${index}`}>
+                        <li key={link.url} className={`list-${index}`}>
                             <a href={link.url} target="_blank" rel="noopener noreferrer" >{link.text}</a>
                         </li>
                     ))

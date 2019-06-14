@@ -8,13 +8,14 @@ const Project = ({ project, image }) => {
 
     return (
         <div className="project">
-            <h5>{project.name}</h5>
             <div className="row justify-between">
-                <div className="column half">
+                <div className="column half full-width-sm">
+                    <h5 className="mobile-only">{project.name}</h5>
                     <img alt={project.name} src={image}/>
                 </div>
-                <div className="column half">
-                    <p>Tools: {project.tools}</p>
+                <div className="column half full-width-sm">
+                    <h5 className="desktop-only">{project.name}</h5>
+                    <p className="tools">Tools: {project.tools}</p>
                     <p>{project.description}</p>
                     <div className="row">
                         {
@@ -26,12 +27,14 @@ const Project = ({ project, image }) => {
                     {
                         !!project.awards.length && (
                             <div>
-                                <p>Awards & Achievements</p>
-                                {
-                                    project.awards.map(award => (
-                                        <p key={award}>{award}</p>
-                                    ))
-                                }
+                                <p className="awards-header">Awards & Achievements</p>
+                                <ul>
+                                    {
+                                        project.awards.map((award, index) => (
+                                            <li key={award} className={`list-${index}`}>{award}</li>
+                                        ))
+                                    }
+                                </ul>
                             </div>
                         )
                     }

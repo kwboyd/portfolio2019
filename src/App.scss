@@ -1,14 +1,19 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
 
 html {
     font-size: 16px;
 }
 
-
 @media screen and (max-width: 980px) {
     html {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 11px;
     }
 }
 
@@ -45,7 +50,8 @@ body {
     }
 
     h5 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 400;
     }
 }
 
@@ -83,9 +89,49 @@ body {
 
 .container {
     padding: 2rem 6rem;
-    max-width: 1800px;
+    max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+$color-collection: ($magenta, $purple, $blue, $teal, $green);
+
+@for $i from 0 to length($color-collection) {
+    .list-#{$i} {
+        &::before {
+            color: nth($color-collection, $i+1);
+        }
+        a {
+            &:focus, &:hover, &:visited:hover, &:visited:focus {
+                filter: brightness(40%);
+                color: nth($color-collection, $i+1);
+            }
+        }
+    }
+}
+
+li {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022"; 
+    float: left;
+    margin-top: 3px;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+ul {
+    padding-left: 1.3rem;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
 }
 
 @media screen and (max-width: 980px) {
@@ -93,13 +139,23 @@ body {
         padding: 1rem 3.5rem;
     }
 
-    .column.full-width-sm, .column.full-width {
+    .column.full-width-sm, .column.full {
         flex-basis: calc(100%);
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .content-column {
         max-width: 470px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
     }
 }
