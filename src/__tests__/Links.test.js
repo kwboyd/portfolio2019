@@ -19,7 +19,7 @@ test('renders at least three links', () => {
     expect(getAllByTestId('link-list').length).toBeGreaterThanOrEqual(3);
 })
 
-test('renders a list element with a list-1 class', () => {
+test('renders a list element with a list-0 class', () => {
     const {queryAllByTestId} = render(<Links />)
-    expect(queryAllByTestId('link-list')[0]).toHaveClass('list-1');
+    expect(queryAllByTestId('link-list')[0]).toHaveClass('list-0');
 })

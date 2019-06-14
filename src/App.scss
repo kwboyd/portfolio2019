@@ -5,18 +5,6 @@ html {
     font-size: 16px;
 }
 
-@media screen and (max-width: 980px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    html {
-        font-size: 11px;
-    }
-}
-
 @media screen and (min-width: 1800px) {
     html {
         font-size: 20px;
@@ -29,11 +17,12 @@ html {
 
 body {
     margin: 0px;
+    background-color: $black;
 
-    p, li, a, h1, h2, h3, h4, h5 {
+    p, li, a, h1, h2, h3, h4, h5, a {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
-        color: $black;
+        color: white;
     }
 
     p, li {
@@ -94,7 +83,7 @@ body {
     margin-right: auto;
 }
 
-$color-collection: ($magenta, $purple, $blue, $teal, $green);
+$color-collection: ($magenta, $purple, $blue, $cyan, $teal);
 
 @for $i from 0 to length($color-collection) {
     .list-#{$i} {
@@ -103,7 +92,7 @@ $color-collection: ($magenta, $purple, $blue, $teal, $green);
         }
         a {
             &:focus, &:hover, &:visited:hover, &:visited:focus {
-                filter: brightness(40%);
+                filter: brightness(110%);
                 color: nth($color-collection, $i+1);
             }
         }

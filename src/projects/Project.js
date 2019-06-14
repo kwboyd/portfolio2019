@@ -7,7 +7,7 @@ const Project = ({ project, image }) => {
     const projectLinks = linkTypes.filter(type => project[type]);
 
     return (
-        <div className="project">
+        <div className="project" data-testid="project">
             <div className="row justify-between">
                 <div className="column half full-width-sm">
                     <h5 className="mobile-only">{project.name}</h5>
@@ -17,16 +17,20 @@ const Project = ({ project, image }) => {
                     <h5 className="desktop-only">{project.name}</h5>
                     <p className="tools">Tools: {project.tools}</p>
                     <p>{project.description}</p>
-                    <div className="row">
-                        {
-                            projectLinks.map(linkType => (
-                                <a key={linkType} href={project[linkType]} target="_blank" rel="noopener noreferrer">{linkType}</a>
-                            ))
-                        }
-                    </div>
+                    {
+                        !!projectLinks.length && (
+                            <div className="row">
+                                {
+                                    projectLinks.map(linkType => (
+                                        <a key={linkType} href={project[linkType]} target="_blank" rel="noopener noreferrer">{linkType}</a>
+                                    ))
+                                }
+                            </div>
+                        )
+                    }
                     {
                         !!project.awards.length && (
-                            <div>
+                            <div data-testid="awards">
                                 <p className="awards-header">Awards & Achievements</p>
                                 <ul>
                                     {

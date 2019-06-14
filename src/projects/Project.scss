@@ -21,8 +21,7 @@
         text-transform: capitalize;
         margin-right: 1rem;
         &:hover, &:focus {
-            color: $blue;
-            filter: brightness(40%);
+            filter: brightness(80%);
         }
     }
 
