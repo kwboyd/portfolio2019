@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Header from './header/Header';
 import ProjectsList from './projects/ProjectsList';
 import About from './about/About';
@@ -7,7 +6,7 @@ import './App.scss';
 
 const App = () => {
     return (
-        <div>
+        <div data-testid="root">
             <Header/>
             <About/>
             <ProjectsList/>
@@ -15,4 +14,4 @@ const App = () => {
     )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;

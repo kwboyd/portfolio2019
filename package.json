@@ -1,7 +1,7 @@
 {
   "name": "portfolio2019",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kate Boyd's Portfolio",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -11,7 +11,7 @@
     "start": "parcel src/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kate Boyd",
   "license": "ISC",
   "dependencies": {
     "react": "^16.8.6",
@@ -21,6 +21,14 @@
     "@testing-library/react": "^8.0.1",
     "jest": "^24.8.0",
     "parcel-bundler": "^1.12.3",
-    "sass": "^1.21.0"
+    "sass": "^1.21.0",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^.+\\.(css|scss|png)$": "<rootDir>/config/import-stub.js"
+    }
   }
 }
