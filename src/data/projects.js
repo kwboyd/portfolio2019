@@ -1,13 +1,13 @@
 const projects = [
     {
         "id": 0,
-        "name": "Sideline Fantasy Sports, Acquired 2018",
+        "name": "Sideline Fantasy Sports",
         "image": "sideline.png",
         "tools": "Angular, Ionic, Cordova, TypeScript, Sass",
-        "description": "I joined Sideline as the company’s first hire and the sole front end developer. In collaboration with the backend developer and the UX designer, I built this app from scratch. I created reusable components using Sass and used Angular to handle the complex user interactions necessary for gameplay and integrate with the back end API. While building Sideline, I learned the importance of developing a scalable architecture, and I took initiative to deepen my understanding of data structures to help me improve the reusability and maintainability of the code. From day one, I fully participated in ideation and UX design, so I learned quite a bit about the process of taking an app from conception to production. Sideline was acquired by a larger gaming company in 2018.",
+        "description": "I joined Sideline as the company’s first hire and the sole front end developer. In collaboration with the backend developer and the UX designer, I built this app from scratch. I created reusable components using Sass and used Angular to handle the complex user interactions necessary for gameplay and integrate with the back end API. While building Sideline, I learned the importance of developing a scalable architecture, and I took initiative to deepen my understanding of data structures to help me improve the reusability and maintainability of the code. From day one, I fully participated in ideation and UX design, so I learned quite a bit about the process of taking an app from conception to production. Sideline's mobile app was later acquired by a larger gaming company.",
         "repo": null,
         "link": null,
-        "awards": null
+        "awards": ["Acquired in 2018"]
     },
     {
         "id": 1,
