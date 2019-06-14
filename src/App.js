@@ -6,7 +6,7 @@ import './App.scss';
 
 const App = () => {
     return (
-        <div data-testid="root">
+        <div data-testid="app">
             <Header/>
             <About/>
             <ProjectsList/>

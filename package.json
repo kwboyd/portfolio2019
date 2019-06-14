@@ -2,7 +2,7 @@
   "name": "portfolio2019",
   "version": "1.0.0",
   "description": "Kate Boyd's Portfolio",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -14,6 +14,7 @@
   "author": "Kate Boyd",
   "license": "ISC",
   "dependencies": {
+    "jest-dom": "^3.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -28,7 +29,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^.+\\.(css|scss|png)$": "<rootDir>/config/import-stub.js"
+      "^.+\\.(css|scss|png|pdf)$": "<rootDir>/config/import-stub.js"
     }
   }
 }

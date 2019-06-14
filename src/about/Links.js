@@ -1,5 +1,7 @@
 import React from 'react';
 import './Links.scss';
+import resume from '../images/Kate_Boyd_Resume.pdf';
+
 
 const linkList = [
     {
@@ -15,7 +17,7 @@ const linkList = [
         text: 'LinkedIn'
     },
     {
-        url: '/assets/Kate_Boyd_Resume.pdf',
+        url: resume,
         text: 'Resume'
     },
     {
@@ -31,7 +33,7 @@ const Links = () => {
             <ul>
                 {
                     linkList.map((link, index) => (
-                        <li key={link.url} className={`list-${index}`}>
+                        <li key={link.url} className={`list-${index}`} data-testid={`li-${index}`}>
                             <a href={link.url} target="_blank" rel="noopener noreferrer" >{link.text}</a>
                         </li>
                     ))
