@@ -6,7 +6,7 @@ const Header = () => {
         <section className="header">
             {
                 [1, 2, 3].map(num => (
-                    <div className="gradient" id={`gradient-${num}`} key={num}></div>
+                    <div className="gradient" id={`gradient-${num}`} key={num} data-testid="gradient"></div>
                 ))
             }
             <div className="header-text">
