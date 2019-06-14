@@ -1,12 +1,42 @@
 import React from 'react';
+import './Links.scss';
+
+const linkList = [
+    {
+        url: 'https://github.com/kwboyd',
+        text: 'GitHub'
+    },
+    {
+        url: 'https://twitter.com/kwboyd_',
+        text: 'Twitter'
+    },
+    {
+        url: 'https://www.linkedin.com/in/kate-boyd-718229109/',
+        text: 'LinkedIn'
+    },
+    {
+        url: '/assets/Kate_Boyd_Resume.pdf',
+        text: 'Resume'
+    },
+    {
+        url: 'http://podcast.womenintechshow.com/df04d003',
+        text: 'Hear me as a guest on the Women in Tech podcast'
+    }
+]
 
 const Links = () => {
     return (
-        <div className="Links">
-            <a href="https://github.com/kwboyd" target="_blank" rel="noopener noreferrer">Check out my GitHub</a>
-            <a href="http://podcast.womenintechshow.com/df04d003" target="_blank" rel="noopener noreferrer">Hear me as a guest on the Women in Tech podcast</a>
-            <a href="https://www.linkedin.com/in/kate-w-boyd-718229109/" target="_blank" rel="noopener noreferrer">Visit my LinkedIn</a>
-            <a alt="Resume" href="/assets/Kate_Boyd_Resume.pdf" target="_blank">Download my resume</a>
+        <div className="links">
+            <h3>Other places I exist:</h3>
+            <ul>
+                {
+                    linkList.map((link, index) => (
+                        <li key={link.url} className={`link-${index}`}>
+                            <a href={link.url} target="_blank" rel="noopener noreferrer" >{link.text}</a>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     )
 }

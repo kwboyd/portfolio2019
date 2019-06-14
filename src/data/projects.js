@@ -32,18 +32,6 @@ const projects = [
         "docs": "https://kwboyd.gitbooks.io/japanese-api/content/",
         "link": "https://ganba.herokuapp.com/",
         "awards": null
-    },
-    {
-        "id": 3,
-        "name": "NC State Parks Roadmap",
-        "image": "ncparks.png",
-        "tools": "Vue.js, ES6, Google Maps",
-        "description": "This project was where I fell in love with JavaScript and its frameworks. The app uses the Google Maps JavaScript API to allow users to create their own personalized roadtrip to multiple North Carolina State Parks, while calculating distance and time needed. I worked on this project during the PearlHacks hackathon, which inspired me to go above and beyond the parameters for this assignment and see what I could accomplish with Vue and an external API",
-        "badges": null,
-        "docs": null,
-        "repo": "https://github.com/kwboyd/NC-state-parks",
-        "link": "http://kwboyd.com/ncparks/",
-        "awards": null
     }
 ]
 

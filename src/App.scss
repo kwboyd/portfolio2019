@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,600&display=swap');
 
 html {
     font-size: 16px;
@@ -12,15 +12,12 @@ html {
     }
 }
 
-body {
-    margin: 0px;
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
+    margin: 0px;
     font-family: 'Josefin Sans', sans-serif;
 
     .row {
@@ -45,6 +42,23 @@ body {
             &.full {
                 flex-basis: calc(100% - #{$gutter});
             }
+            &.third {
+                flex-basis: calc(33% - #{$gutter});
+            }
+            &.two-thirds {
+                flex-basis: calc(66% - #{$gutter});
+            }
         }
+    }
+
+    p, li {
+        font-weight: 300;
+        color: $black;
+        line-height: 1.5;
+        margin: 1rem 0;
+    }
+
+    p {
+        margin: 1rem 0;
     }
 }

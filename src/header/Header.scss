@@ -1,9 +1,5 @@
 @import '../variables.scss';
 
-$purple: rgba(151,101,255,0.4);
-$magenta: rgba(207,63,218,0.5);
-$blue: rgba(34,124,255,0.5);
-
 .header {
     height: 100vh;
     width: 100%;
@@ -17,10 +13,11 @@ $blue: rgba(34,124,255,0.5);
         position: absolute;
         top: 0;
         left: 0;
-        animation: first 12s linear infinite alternate;
+        animation: rainbow 12s linear infinite alternate;
+        will-change: filter;
     }
 
-    @keyframes first {
+    @keyframes rainbow {
         0% {
             filter: hue-rotate(0deg)
         }
