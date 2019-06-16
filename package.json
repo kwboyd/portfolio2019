@@ -8,7 +8,8 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "test:update": "jest -u",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "Kate Boyd",

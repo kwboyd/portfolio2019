@@ -4,4 +4,4 @@
 
 ## Build
 1. You will need the parcel-bundler CLI: `npm install -g parcel-bundler`
-2. Build with `parcel build src/index.html` 
+2. Build with `npm run build` 
