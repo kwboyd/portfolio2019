@@ -1,6 +1,15 @@
 const projects = [
     {
-        "id": 0,
+        "name": "Cat Party",
+        "image": "cats",
+        "tools": "React, Jest, React Testing Library",
+        "description": "This was a project I built for fun to experiment with React and testing it using React Testing Library. This app allows you to breed ASCII cats to create new ones. New cats inherit the genes of their parents (which can be dominant or recessive), and each genotype has its own phenotype that determines the eyes, whiskers, and nose characters of the cat. There's also an element of randomness to each cat, which was fun a challenge for unit and integration testing.",
+        "repo": "https://github.com/kwboyd/cat-party",
+        "docs": null,
+        "live": "http://kwboyd.com/static/cats/",
+        "awards": []
+    },
+    {
         "name": "Sideline Fantasy Sports",
         "image": "sideline",
         "tools": "Angular, Ionic, Cordova, TypeScript, Sass",
@@ -11,7 +20,6 @@ const projects = [
         "awards": ["Acquired in 2018"]
     },
     {
-        "id": 1,
         "name": "Cuba's New Wave",
         "image": "cuba",
         "tools": "JavaScript, Node.js, EJS, Sass",
@@ -22,7 +30,6 @@ const projects = [
         "awards": ["Online Journalism Award for large student newsrooms", "College Photographer of the Year’s Online Multimedia Storytelling"]
     },
     {
-        "id": 2,
         "name": "Ganba!",
         "image": "ganba",
         "tools": "Laravel, Vue.js, ES6, PHP",
