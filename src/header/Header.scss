@@ -7,67 +7,35 @@
     max-width: 100%;
     overflow: hidden;
 
-    #header-cover {
-        will-change: background-color;
-        animation: rainbow 20s linear infinite alternate;
-    }
-
     .gradient {
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
-    }
-
-    #white-left {
-        background: radial-gradient(circle at 0% 100%, 
-        $black, transparent)
-    }
-
-    #white-right {
-        background: radial-gradient(circle at 100% 100%, 
-        $black, transparent)
-    }
-
-    #white-bottom {
-        background: linear-gradient(to top, $black, transparent);
+        animation: rainbow 12s linear infinite alternate;
+        will-change: filter;
     }
 
     @keyframes rainbow {
         0% {
-            background-color: $purple;
-        }
-        10% {
-            background-color: $magenta;
-        }
-        20% {
-            background-color: $blue;
-        }
-        30% {
-            background-color: $cyan;
-        }
-        40% {
-            background-color: $teal;
-        }
-        50% {
-            background-color: $green;
-        }
-        60% {
-            background-color: $lime;
-        }
-        70% {
-            background-color: $yellow;
-        }
-        80% {
-            background-color: $orange;
-        }
-        90% {
-            background-color: $red;
+            filter: hue-rotate(0deg)
         }
         100% {
-            background-color: $purple;
+            filter: hue-rotate(360deg);
         }
+    }
+
+    #gradient-1 {
+        background: radial-gradient(ellipse at 50% 50%, $purple, transparent 61%);
+    }
+
+    #gradient-2 {
+        background: radial-gradient(ellipse at 77% 12%, $magenta, transparent 60%);
+    }
+
+    #gradient-3 {
+        background: radial-gradient(ellipse at 20% 12%, $blue, transparent 63%);
     }
 
     .header-text {
@@ -104,17 +72,7 @@
         letter-spacing: 0.51rem;
     }
 
-    @media screen and (max-width: 500px) {
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 0.8rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-            letter-spacing: 0.8rem;
-        }
-
+    @media screen and (max-width: 667px) {   
         .text-box {
             margin-top: -25%;
         }

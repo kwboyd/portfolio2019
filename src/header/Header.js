@@ -4,10 +4,11 @@ import './Header.scss';
 const Header = () => {
     return (
         <section className="header">
-            <div className="gradient" id="header-cover"></div>
-            <div className="gradient" id="white-left"></div>
-            <div className="gradient" id="white-right"></div>
-            <div className="gradient" id="white-bottom"></div>
+            {
+                [1, 2, 3].map(num => (
+                    <div className="gradient" id={`gradient-${num}`} key={num} data-testid="gradient"></div>
+                ))
+            }
             <div className="header-text">
                 <div className="text-box">
                     <h1>Kate Boyd</h1>
